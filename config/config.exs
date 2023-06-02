@@ -10,6 +10,12 @@ import Config
 config :sender,
   ecto_repos: [Sender.Repo]
 
+config :sender,
+  send_champ: [
+    base_url: "https://api.sendchamp.com/api/v1",
+    access_key: "Put Public Access key"
+  ]
+
 # Configures the endpoint
 config :sender, SenderWeb.Endpoint,
   url: [host: "localhost"],
